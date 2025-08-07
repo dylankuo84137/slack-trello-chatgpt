@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slack + Trello + ChatGPT 校內輔導整合提案</title>
+  <style>
+    body {
+      font-family: "Noto Sans TC", sans-serif;
+      line-height: 1.6;
+      margin: 2rem auto;
+      max-width: 800px;
+      padding: 1rem;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #174ea6;
+    }
+    code, pre {
+      background-color: #eef3f7;
+      padding: 0.4rem 0.6rem;
+      border-radius: 4px;
+      display: block;
+      overflow-x: auto;
+    }
+    .box {
+      border-left: 5px solid #b3d4fc;
+      background: #fff;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    .flowchart {
+      background: #eef3f7;
+      padding: 0.5rem;
+      margin: 1rem 0;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>Slack + Trello + ChatGPT：校內輔導工作整合提案</h1>
+  <h2>一、目標</h2>
+  <p>透過 Slack、Trello、ChatGPT 三工具整合，提升輔導室在 <strong>通報效率、個案追蹤、文件撰寫</strong> 上的協作力與透明度。</p>
+  <h2>二、工具分工</h2>
+  <ul>
+    <li><strong>Slack</strong>：通報／協作／通知／整合中心</li>
+    <li><strong>Trello</strong>：追蹤每位學生個案與會議行動項</li>
+    <li><strong>ChatGPT</strong>：輔助生成紀錄、摘要與反思撰寫</li>
+  </ul>
+  <h2>三、工作流 1：個案協作</h2>
+  <div class="flowchart">Slack ➜ Workflow表單 ➜ Trello卡片 ➜ 更新進度 ➜ Slack通知 ➜ ChatGPT協助撰寫紀錄</div>
+  <div class="box">
+    ✅ 對應 Slack 頻道：<code>#輔導案例通報</code><br>
+    ✅ Trello 欄位：待處理 → 處理中 → 追蹤中 → 結案<br>
+    ✅ ChatGPT：生成簡報或溝通稿草稿
+  </div>
+  <h2>四、工作流 2：會議與紀錄</h2>
+  <div class="flowchart">Google Calendar ➜ Slack提醒 ➜ Google Docs共筆 ➜ ChatGPT摘要 ➜ Trello行動項目 ➜ Slack回報</div>
+  <div class="box">
+    ✅ Slack 整合 Google 行事曆提醒<br>
+    ✅ ChatGPT 協助整理共筆重點與行動項<br>
+    ✅ Trello 負責分派與追蹤
+  </div>
+  <h2>五、Slack Workflow 快速建構</h2>
+  <ol>
+    <li>Slack → Tools → Workflow Builder → New</li>
+    <li>選「表單提交」，欄位包含：學生、通報人、摘要、建議</li>
+    <li>表單送出 ➜ Trello 卡片（Zapier / Slack App 整合）</li>
+  </ol>
+  <h2>六、ChatGPT 實用提示語</h2>
+  <ul>
+    <li>📝 <strong>輔導紀錄：</strong><br><code>請整理以下觀察為輔導紀錄：…</code></li>
+    <li>🧾 <strong>會議紀錄摘要：</strong><br><code>請將以下會議共筆整理為正式會議紀錄…</code></li>
+    <li>💡 <strong>心得反思：</strong><br><code>請協助我撰寫本週輔導心得，重點是…</code></li>
+    <li>📬 <strong>家長溝通信：</strong><br><code>幫我寫一封家長溝通信，說明孩子的情緒與建議做法…</code></li>
+  </ul>
+  <h2>七、下一步</h2>
+  <ul>
+    <li>✔ 建立 Trello 看板樣板</li>
+    <li>✔ 設計 Slack 頻道＋Workflow</li>
+    <li>✔ ChatGPT 使用訓練與提示語範本</li>
+    <li>✔ 輔導室先行試點，視成效推廣全校</li>
+  </ul>
+  <p><strong>由 IT 支援協助建置與後續優化</strong>，歡迎提供建議與回饋！</p>
+</body>
+</html>
